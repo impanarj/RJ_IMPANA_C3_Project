@@ -30,12 +30,11 @@ class RestaurantServiceTest {
         assertTrue(service.findRestaurantByName(restaurantName).getName() == restaurantName);
     }
 
-    //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
     @Test
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         addRestaurantDetails();
 
-        String restaurantName = "Singhania's cafe";
+        String restaurantName = "Singhanias cafe";
 
         //failing test case
 
@@ -86,4 +85,3 @@ class RestaurantServiceTest {
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
- 75

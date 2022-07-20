@@ -37,6 +37,9 @@ class RestaurantServiceTest {
 
         String restaurantName = "Singhania's cafe";
 
+        //failing test case
+
+
         assertThrows(restaurantNotFoundException.class, () -> service.findRestaurantByName(restaurantName), "Restaurant not found");
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
